@@ -4,7 +4,16 @@
  * User: Sunwu
  * Date: 2018/12/30
  * Time: 22:40
+ * MYSQL调试工具
+ * 配置说明
+ * MYSQL配置文件my.ini中加入：
+    [mysqld]
+    general_log=ON
+    general_log_file=C:\phpStudy\debug.log
+ * 重启mysql 看看 mysql.log 文件有没有生成mysql.log 文件名如果在 mysql.ini 中已经使用 请换个名字
+ * 2.配置你的 mysql_query.php 访问路径 我这里是  $url_path='http://127.0.0.1:8080/mysql_query.php';
  */
+
 
 header('Content-type:text/json');
 //配置
